@@ -6,7 +6,7 @@ cmd = obd.commands.SPEED # select an OBD command (sensor)
 
 response = connection.query(cmd) # send the command, and parse the response
 
-print('+++++++++++++++++++++++++++++++')
+print('++++++++++++++++++++++++++++++++')
 print("Ports", obd.scan_serial()) # ['/dev/ttyUSB0', '/dev/ttyUSB1']
 print("Is connected?", connection.is_connected())
 print("Port name", connection.port_name())
